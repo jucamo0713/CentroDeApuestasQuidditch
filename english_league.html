@@ -2,61 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <title>Liga Inglesa</title>
-
+    <link href="img/logo.png" rel="shortcut icon" type="image/x-icon">
 </head>
-
 <body>
-    <header> 
-        <div class="nav-bar">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-                <span>CAQ</span>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="matches.html">Partidos</a></li>
-                    <li><a href="results.html">Resultados</a></li>
-                    <li><a href="events.html">Eventos</a></li>
-                </ul>
-            </div>
-            <div class="login">
-                <input type="text" id="email" name="email" placeholder="Correo">
-                <input type="password" id="pwd" name="pwd" placeholder="Contraseña">
-                <a href="index_user.html"><button type="submit" >ENTRAR</button></a>
-                <a href="#">¿Contraseña Olvidada?</a>
-            </div>
-        </div>
-    </header>
-
+<header>
+    <nav class="nav-bar">
+        <section class="logo">
+            <img alt="logo" src="img/logo.png">
+            <span>CAQ</span>
+        </section>
+        <section class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="matches.html">Partidos</a></li>
+                <li><a href="results.html">Resultados</a></li>
+                <li><a href="events.html">Eventos</a></li>
+            </ul>
+        </section>
+        <section class="login">
+            <label for="email">Email</label><input id="email" name="email" placeholder="Correo" type="text">
+            <label for="pwd">Password</label><input id="pwd" name="pwd" placeholder="Contraseña" type="password">
+            <a href="index_user.html">
+                <button type="submit">ENTRAR</button>
+            </a>
+            <a href="#">¿Contraseña Olvidada?</a>
+        </section>
+    </nav>
+</header>
+<main>
     <!-- Liga Inglesa-->
-    <section id="cup-details">
+    <section class="cup-details">
         <h2>Liga Inglesa</h2>
-        <img src="img/english-league.jpeg" alt="Cartel de la liga">
-        <figcaption>Imagen generada por Copilot</figcaption>
+        <figure><img alt="Cartel de la liga" src="img/english-league.jpeg">
+            <figcaption>Imagen generada por Copilot</figcaption>
+        </figure>
     </section>
 
     <!-- Tabla de posiciones -->
-    <section id="cup-details">
+    <section class="cup-details">
         <h2>Tabla de Posiciones</h2>
         <p>Tabla de posiciones de la liga Inglesa...</p>
     </section>
 
     <!-- Etapas -->
-    <section id="cup-details">
+    <section class="cup-details">
         <h2>Etapas de la liga Inglesa</h2>
-        <img src="img/etapas.jpeg" alt="Etapas de la liga">
-        <figcaption>Imagen generada por Copilot</figcaption>
+        <figure>
+            <img alt="Etapas de la liga" src="img/etapas.jpeg">
+            <figcaption>Imagen generada por Copilot</figcaption>
+        </figure>
     </section>
 
     <!-- Tabla de mejores jugadores -->
-    <section id="cup-details">
+    <section class="cup-details">
         <h2>Tabla de mejores jugadores</h2>
         <p>Tabla de posiciones de los jugadores de la liga inglesa ...</p>
     </section>
-    
+</main>
 </body>
 </html>

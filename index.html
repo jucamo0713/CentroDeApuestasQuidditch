@@ -3,45 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <title>Apuestas Quidditch</title>
     <script>
-        function mostrarAlerta(){
+        function mostrarAlerta() {
             alert("Debes estar registrado para apostar");
         }
-    </script>
+    </script>    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="nav-bar">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-                <span>CAQ</span>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="matches.html">Partidos</a></li>
-                    <li><a href="results.html">Resultados</a></li>
-                    <li><a href="events.html">Eventos</a></li>
-                </ul>
-            </div>
-            <div class="login">
-                <input type="text" id="email" name="email" placeholder="Correo">
-                <input type="password" id="pwd" name="pwd" placeholder="Contraseña">
-                <a href="index_user.html"><button type="submit" >ENTRAR</button></a>
-                <a href="#">¿Contraseña Olvidada?</a>
-            </div>
-        </div>
-        
-    </header>
+<header>
+    <nav class="nav-bar">
+        <section class="logo">
+            <img src="img/logo.png" alt="logo">
+            <span>CAQ</span>
+        </section>
+        <section class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="matches.html">Partidos</a></li>
+                <li><a href="results.html">Resultados</a></li>
+                <li><a href="events.html">Eventos</a></li>
+            </ul>
+        </section>
+        <section class="login">
+            <label for="email">Email</label><input type="text" id="email" name="email" placeholder="Correo">
+            <label for="pwd">Password</label><input type="password" id="pwd" name="pwd" placeholder="Contraseña">
+            <a href="index_user.html">
+                <button type="submit">ENTRAR</button>
+            </a>
+            <a href="#">¿Contraseña Olvidada?</a>
+        </section>
+    </nav>
 
+</header>
+<main>
     <!-- Inicio -->
     <section id="splash">
         <h2>Bienvenido al Centro de Apuestas Quidditch</h2>
         <p>La emoción del Quidditch en tus manos. ¿Listo para apostar?</p>
-        <a href="sign_up.html"><button>Regístrate</button></a>
+        <a href="sign_up.html">
+            <button>Regístrate</button>
+        </a>
     </section>
 
     <!-- Apuestas Rapidas -->
@@ -57,20 +61,7 @@
             <p>Horario: 20:00</p>
             <button onclick="mostrarAlerta()">Realizar Apuesta</button>
         </div>
-        
     </section>
-
-    <!-- Detalles del Partido -->
-    <section id="match-details">
-        <h2>Detalles del Partido</h2>
-        <!-- Información detallada del partido, opciones de predicción y apuesta -->
-        <h3>Equipo A vs. Equipo B</h3>
-        <p>Estadísticas Previas, Cuotas de Apuestas, etc.</p>
-        <form>
-            <button onclick="mostrarAlerta()">Realizar Apuesta</button>
-        </form>
-    </section>
-
-
+</main>
 </body>
 </html>

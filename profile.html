@@ -3,68 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <title>Perfil de Usuario</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <title>Perfil de Usuario</title>    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
 
-    <header>
-        <div class="nav-bar">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-                <span>CAQ</span>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index_user.html">Inicio</a></li>
-                    <li><a href="matches_user.html">Partidos</a></li>
-                    <li><a href="results_user.html">Resultados</a></li>
-                    <li><a href="events_user.html">Eventos</a></li>
-                    <li><a href="favorites_user.html">Favoritos</a></li>
-                    <li><a href="upgrade.html">Recargar</a></li>
-                    <li><a href="profile.html">Perfil</a></li>
-                </ul>
-            </div>
-            <div class="login">
-                <span>Username1</span>
-                <span> | </span>
-                <span>$50.000</span>
-                <a href="index.html">Salir</a>
-            </div>
-        </div>
-    </header>
-
+<header>
+    <nav class="nav-bar">
+        <section class="logo">
+            <img src="img/logo.png" alt="logo">
+            <span>CAQ</span>
+        </section>
+        <section class="menu">
+            <ul>
+                <li><a href="index_user.html">Inicio</a></li>
+                <li><a href="matches_user.html">Partidos</a></li>
+                <li><a href="results_user.html">Resultados</a></li>
+                <li><a href="events_user.html">Eventos</a></li>
+                <li><a href="favorites_user.html">Favoritos</a></li>
+                <li><a href="upgrade.html">Recargar</a></li>
+                <li><a href="profile.html">Perfil</a></li>
+            </ul>
+        </section>
+        <section class="login">
+            <span>Username1</span>
+            <span> | </span>
+            <span>$50.000</span>
+            <a href="index.html">Salir</a>
+        </section>
+    </nav>
+</header>
+<main>
     <!-- Perfil de Usuario -->
-    <section id="user-profile">
+    <section class="user-profile">
         <h2>Mi Perfil</h2>
 
         <!-- Información del Usuario -->
-        <div class="user-info">
-            <img src="img/profile-picture.jpg" alt="Foto de perfil" width="400px">
-            <figcaption>Imagen generada por app.leonardo.ai</figcaption>
+        <div id="user-info">
+            <figure>
+                <img id="profile-image" src="img/profile-picture.jpg" alt="Foto de perfil">
+                <figcaption>Imagen generada por app.leonardo.ai</figcaption>
+            </figure>
             <br>
             <p>Nombre: Harry James Potter</p>
             <p>Email: hjamespo@hogwarts.edu.co</p>
+            <p>Usuario: Username1</p>
             <p>Fecha de nacimiento: 31 de julio de 1980</p>
             <p>Creditos: $50.000</p>
+            <button>Editar</button>
         </div>
     </section>
-    
-    <!-- Formulario para Editar Datos Personales -->
-    <section id="user-profile">
-        <div class="profile">
-            <h2>Actualizar Información</h2>
-            <form>
-                <label for="new-email">Nuevo Email:</label>
-                <input type="email" id="new-email" name="new-email" placeholder="Ingrese el nuevo email">
-
-                <label for="new-password">Nueva Contraseña:</label>
-                <input type="password" id="new-password" name="new-password" placeholder="Ingrese la nueva contraseña">
-
-                <button type="submit">Guardar Cambios</button>
-            </form>
-        </div>
-    </section>
-
+</main>
 </body>
 </html>

@@ -14,7 +14,7 @@ body {
     color: #fff; /* Texto en blanco para mejor contraste */
 }
 
-section {
+main section {
     margin: 20px;
     padding: 20px;
     background-color: #1c1613; /* Fondo oscuro para las secciones */
@@ -29,7 +29,7 @@ header {
 }
 
 h1, h2 {
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
 }
 
 button {
@@ -65,21 +65,21 @@ button {
     flex-wrap: wrap;
 }
 
-#match-details {
+.match-details {
     text-align: center;
 }
 
-#match-details form {
+.match-details form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#cup-details {
+.cup-details {
     text-align: center;
 }
 
-#cup-details form {
+.cup-details form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,12 +132,6 @@ button {
     align-items: center;
 }
 
-.login a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    margin-left: 10px;
-}
-
 .login input[type=text], .login input[type=password] {
     width: 150px;
     padding: 5px;
@@ -157,6 +151,7 @@ button {
     color: var(--accent-color);
     text-decoration: none;
     margin-left: 10px;
+    z-index: 1000;
 }
 
 .profile input[type=email], .profile input[type=password], .profile input[type=text], .profile input[type=number] {
@@ -181,3 +176,60 @@ button {
     transition: border-color 0.3s ease; /* Añade una transición suave para el cambio de color del borde */
 }
 
+#profile-image {
+    min-width: 400px;
+    width: 40vw;
+}
+
+.profile a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-left: 10px;
+    z-index: 1000;
+}
+
+#match-detail {
+    background: linear-gradient(180deg, var(--accent-color), var(--section-color));
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+#macro-match{
+    border-bottom: white 5px solid;
+    border-top: white 5px solid;
+    padding: 20px;
+    text-align: center;
+    width: 55vw;
+    font-size: 2em;
+}
+#match-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#match-banner img{
+    border: white 5px solid;
+    padding: 10px;
+    aspect-ratio: 1;
+    margin: -15px;
+    border-radius:100%;
+    width: 15vw;
+}
+#match-points{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+#match-points span{
+    display: flex;
+    background-color: white;
+    font-size: 3em;
+    color: black;
+    padding: 0.5em;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
+    width: 10vw;
+}

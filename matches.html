@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <title>Partidos</title>
     <script>
-        function mostrarAlerta(){
+        function mostrarAlerta() {
             alert("Debes estar registrado para apostar");
         }
-    </script>
-</head>
+    </script><link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
 <body>
-    <header> 
-        <div class="nav-bar">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-                <span>CAQ</span>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="matches.html">Partidos</a></li>
-                    <li><a href="results.html">Resultados</a></li>
-                    <li><a href="events.html">Eventos</a></li>
-                </ul>
-            </div>
-            <div class="login">
-                <input type="text" id="email" name="email" placeholder="Correo">
-                <input type="password" id="pwd" name="pwd" placeholder="Contraseña">
-                <a href="index_user.html"><button type="submit" >ENTRAR</button></a>
-                <a href="#">¿Contraseña Olvidada?</a>
-            </div>
-        </div>
-    </header>
-
+<header>
+    <nav class="nav-bar">
+        <section class="logo">
+            <img src="img/logo.png" alt="logo">
+            <span>CAQ</span>
+        </section>
+        <section class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="matches.html">Partidos</a></li>
+                <li><a href="results.html">Resultados</a></li>
+                <li><a href="events.html">Eventos</a></li>
+            </ul>
+        </section>
+        <section class="login">
+            <label for="email">Email</label><input type="text" id="email" name="email" placeholder="Correo">
+            <label for="pwd">Password</label><input type="password" id="pwd" name="pwd" placeholder="Contraseña">
+            <a href="index_user.html">
+                <button type="submit">ENTRAR</button>
+            </a>
+            <a href="#">¿Contraseña Olvidada?</a>
+        </section>
+    </nav>
+</header>
+<main>
     <!-- Detalles del Partido -->
-    <section id="match-details">
+    <section class="match-details">
         <h2>Detalles del Partido</h2>
         <!-- Información detallada del partido, opciones de predicción y apuesta -->
         <h3>Equipo A vs. Equipo B</h3>
@@ -48,7 +49,7 @@
     </section>
 
     <!-- Detalles del Partido -->
-    <section id="match-details">
+    <section class="match-details">
         <h2>Detalles del Partido</h2>
         <!-- Información detallada del partido, opciones de predicción y apuesta -->
         <h3>Equipo C vs. Equipo D</h3>
@@ -59,7 +60,7 @@
     </section>
 
     <!-- Detalles del Partido -->
-    <section id="match-details">
+    <section class="match-details">
         <h2>Detalles del Partido</h2>
         <!-- Información detallada del partido, opciones de predicción y apuesta -->
         <h3>Equipo R vs. Equipo E</h3>
@@ -68,6 +69,6 @@
             <button onclick="mostrarAlerta()">Realizar Apuesta</button>
         </form>
     </section>
-    
+</main>
 </body>
 </html>
