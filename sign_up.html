@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Registrarse</title>
+    <script>
+        function signUp(){
+            alert("Datos registrados con exito");
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <span>CAQ</span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="matches.html">Partidos</a></li>
+                    <li><a href="results.html">Resultados</a></li>
+                    <li><a href="events.html">Eventos</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <input type="text" id="email" name="email" placeholder="Correo">
+                <input type="password" id="pwd" name="pwd" placeholder="Contraseña">
+                <a href="index_user.html"><button type="submit" >ENTRAR</button></a>
+                <a href="#">¿Contraseña Olvidada?</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Formulario para registrar Datos Personales -->
+    <section id="user-register">
+        <div class="profile">
+            <h2>Registro</h2>
+            <form action="" method="post" enctype="">
+                <label for="imagen">Selecciona una imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+                <br><br>
+                <label for="reg-name">Nombre:</label>
+                <input type="text" id="reg-name" name="reg-name" placeholder="Ingrese su nombre">
+
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="reg-email" placeholder="Ingrese su email">
+
+                <label for="reg-birth">Fecha de nacimiento:</label>
+                <input type="date" id="reg-birth" name="reg-birth">
+
+                <label for="reg-password">Contraseña:</label>
+                <input type="password" id="reg-password" name="reg-password" placeholder="Ingrese una contraseña">
+
+                <button onclick="signUp()">Registrarse</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
