@@ -57,7 +57,7 @@ button {
 }
 
 #dashboard .match:hover {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Sutil sombra blanca al hacer hover */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2); /* Sutil sombra blanca al hacer hover */
 }
 
 .matches-container {
@@ -241,4 +241,19 @@ button {
     justify-content: center;
     border-radius: 25%;
     width: 10vw;
+}
+
+.user-profile #user-info {
+    text-align: center;
+    border: 1px solid #eedd82; /* Borde amarillo quaffle */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: box-shadow 0.3s ease;
+    background-color: #1c1613; /* Fondo oscuro para destacar */
+}
+
+.user-profile #user-info:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Sutil sombra blanca al hacer hover */
 }
