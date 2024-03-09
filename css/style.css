@@ -73,7 +73,11 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    margin-right: 10px;
 }
+
 
 .cup-details {
     text-align: center;
@@ -152,6 +156,11 @@ button {
     text-decoration: none;
     margin-left: 10px;
     z-index: 1000;
+}
+
+.user-register{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .profile input[type=email], .profile input[type=password], .profile input[type=text], .profile input[type=number] {
