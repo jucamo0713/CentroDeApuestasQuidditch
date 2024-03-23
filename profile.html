@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <title>Perfil de Usuario</title>    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Perfil de Usuario</title>    
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -37,11 +38,11 @@
 <main>
 
     <!-- Perfil de Usuario -->
-    <section class="user-profile">
+    <section id="dashboard">
         <h2>Mi Perfil</h2>
 
         <!-- Información del Usuario -->
-        <div id="user-info">
+        <div class="scheme">
             <figure>
                 <img id="profile-image" src="img/profile-picture.jpg" alt="Foto de perfil">
                 <figcaption>Imagen generada por app.leonardo.ai</figcaption>
@@ -52,11 +53,12 @@
             <p>Usuario: Username1</p>
             <p>Fecha de nacimiento: 31 de julio de 1980</p>
             <p>Creditos: $50.000</p>
-            <button>Editar</button>
+            <button class="magic-button">Editar</button>
         </div>
 
-        <div id="user-info">
-            <h2>Historial de Apuestas</h2>
+        <!-- Historial de Apuestas -->
+        <h2>Historial de Apuestas</h2>
+        <div class="scheme">
             <p>Apuesta 1... ganancia/perdida</p>
             <p>Apuesta 2... ganancia/perdida</p>
             <p>Apuesta 3... ganancia/perdida</p>

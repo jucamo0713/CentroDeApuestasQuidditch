@@ -6,20 +6,21 @@
     --section-color: #231c18;
 }
 
+/*Esquema*/
 body {
-    font-family: 'Harry P', sans-serif; /* Utiliza una fuente que se asemeje a la de Harry Potter si está disponible */
+    font-family: 'Harry P', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--body-color); /* Un tono más oscuro para el fondo */
-    color: #fff; /* Texto en blanco para mejor contraste */
+    background-color: var(--body-color);
+    color: #fff;
 }
 
 main section {
     margin: 20px;
     padding: 20px;
-    background-color: #1c1613; /* Fondo oscuro para las secciones */
+    background-color: #1c1613;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra blanca */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 header {
@@ -41,71 +42,40 @@ button {
     cursor: pointer;
 }
 
-#splash {
+/*Secciones*/
+#dashboard .scheme {
     text-align: center;
-}
-
-#dashboard .match {
-    text-align: center;
-    border: 1px solid #eedd82; /* Borde amarillo quaffle */
+    border: 1px solid #eedd82;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 4px;
     margin-right: 10px;
     transition: box-shadow 0.3s ease;
-    background-color: #1c1613; /* Fondo oscuro para destacar */
+    background-color: #1c1613;
 }
 
-#dashboard .match:hover {
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2); /* Sutil sombra blanca al hacer hover */
+#dashboard .scheme:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
 
-.matches-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.match-details {
-    text-align: center;
-}
-
-.match-details form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    margin-right: 10px;
-}
-
-
-.cup-details {
-    text-align: center;
-}
-
-.cup-details form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/*Barra de navegación*/
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #1c1613; /* Fondo oscuro para la barra de navegación */
+    background-color: #1c1613;
     border-bottom: 2px solid var(--accent-color);
 }
 
 .logo img {
     width: 80px;
     height: 40px;
-    filter: brightness(0) invert(1); /* Invierte los colores de la imagen del logo para que se vea más oscuro en fondos claros */
+    filter: brightness(0) invert(1);
 }
 
 .logo span {
-    color: var(--secondary-color); /* Enlaces en color amarillo quaffle */
+    color: var(--secondary-color);
     font-size: 18px;
     margin-left: 10px;
 }
@@ -126,11 +96,12 @@ button {
 }
 
 .menu a {
-    color: var(--secondary-color); /* Enlaces en color amarillo quaffle */
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 16px;
 }
 
+/*Login en barra de navegación*/
 .login {
     display: flex;
     align-items: center;
@@ -142,13 +113,13 @@ button {
     margin-right: 10px;
     border: none;
     border-radius: 5px;
-    background-color: var(--body-color); /* Fondo oscuro para los inputs */
-    color: #fff; /* Texto en blanco para mejor contraste */
-    transition: border-color 0.3s ease; /* Añade una transición suave para el cambio de color del borde */
+    background-color: var(--body-color);
+    color: #fff;
+    transition: border-color 0.3s ease;
 }
 
 .login input[type=text]:focus, .login input[type=password]:focus {
-    border-color: var(--accent-color); /* Cambia el color del borde al enfocar el input */
+    border-color: var(--accent-color);
 }
 
 .login a {
@@ -158,45 +129,7 @@ button {
     z-index: 1000;
 }
 
-.user-register{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.profile input[type=email], .profile input[type=password], .profile input[type=text], .profile input[type=number] {
-    width: 150px;
-    padding: 5px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #484645; /* Fondo oscuro para los inputs */
-    color: #fff; /* Texto en blanco para mejor contraste */
-    transition: border-color 0.3s ease; /* Añade una transición suave para el cambio de color del borde */
-}
-
-.profile input[type=file] {
-    width: 300px;
-    padding: 5px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #484645; /* Fondo oscuro para los inputs */
-    color: #fff; /* Texto en blanco para mejor contraste */
-    transition: border-color 0.3s ease; /* Añade una transición suave para el cambio de color del borde */
-}
-
-#profile-image {
-    min-width: 400px;
-    width: 40vw;
-}
-
-.profile a {
-    color: var(--accent-color);
-    text-decoration: none;
-    margin-left: 10px;
-    z-index: 1000;
-}
-
+/*Detalles de partido minuto a minuto*/
 #match-detail {
     background: linear-gradient(180deg, var(--accent-color), var(--section-color));
     display: flex;
@@ -243,22 +176,13 @@ button {
     width: 10vw;
 }
 
-.user-profile #user-info {
-    text-align: center;
-    border: 1px solid #eedd82; /* Borde amarillo quaffle */
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    margin-right: 10px;
-    transition: box-shadow 0.3s ease;
-    background-color: #1c1613; /* Fondo oscuro para destacar */
+/*Imagen en el perfil*/
+#profile-image {
+    min-width: 400px;
+    width: 40vw;
 }
 
-.user-profile #user-info:hover {
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2); /* Sutil sombra blanca al hacer hover */
-}
-
-
+/*Animaciones en botones*/
 @keyframes magicEffect {
     0% {
       transform: scale(1);
@@ -286,4 +210,5 @@ button {
   .magic-button:active {
     animation: magicEffect 0.5s ease;
   }
+  
   

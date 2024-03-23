@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <title>Registrarse</title>    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Registrarse</title>    
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -27,20 +28,18 @@
             <label for="email">Email</label><input type="text" id="email" name="email" placeholder="Correo">
             <label for="pwd">Password</label><input type="password" id="pwd" name="pwd" placeholder="Contraseña">
             <a href="index_user.html">
-                <button type="submit">ENTRAR</button>
+                <button type="submit" class="magic-button">ENTRAR</button>
             </a>
             <a href="#">¿Contraseña Olvidada?</a>
         </section>
     </nav>
 </header>
 <main>
-
     <!-- Formulario para registrar Datos Personales -->
-    <section class="user-profile">
+    <section id="dashboard">
         <h2>Registro</h2>
-        
         <!-- Información del Usuario -->
-        <div id="user-info">
+        <div class="scheme">
             <label for="imagen">Selecciona una imagen:</label>
             <input type="file" id="imagen" name="imagen" accept="image/*">
             <br><br>
@@ -60,7 +59,7 @@
             <input type="password" id="conf-password" name="reg-password" placeholder="Confirme la contraseña">
             <br><br>
             <a href="index_user.html">
-                <button>Registrarse</button>
+                <button class="magic-button">Registrarse</button>
             </a>
         </div>
     </section>

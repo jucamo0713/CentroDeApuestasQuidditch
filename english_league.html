@@ -7,6 +7,7 @@
     <title>Liga Inglesa</title>
     <link href="img/logo.png" rel="shortcut icon" type="image/x-icon">
 </head>
+
 <body>
 <header>
     <nav class="nav-bar">
@@ -27,7 +28,7 @@
             <label for="email">Email</label><input id="email" name="email" placeholder="Correo" type="text">
             <label for="pwd">Password</label><input id="pwd" name="pwd" placeholder="Contraseña" type="password">
             <a href="index_user.html">
-                <button type="submit">ENTRAR</button>
+                <button type="submit" class="magic-button">ENTRAR</button>
             </a>
             <a href="#">¿Contraseña Olvidada?</a>
         </section>
@@ -35,28 +36,30 @@
 </header>
 <main>
     <!-- Liga Inglesa-->
-    <section class="cup-details">
+    <section id="dashboard">
         <h2>Liga Inglesa</h2>
-        <figure><img alt="Cartel de la liga" src="img/english-league.jpeg">
-            <figcaption>Imagen generada por Copilot</figcaption>
-        </figure>
-    </section>
+        <div class="scheme">
+            <h2>Portada</h2>
+            <figure><img alt="Cartel de la liga" src="img/english-league.jpeg">
+                <figcaption>Imagen generada por Copilot</figcaption>
+            </figure>
+        </div>
 
-    <!-- Tabla de posiciones -->
-    <section class="cup-details">
-        <h2>Tabla de Posiciones</h2>
-        <p>Tabla de posiciones de la liga Inglesa...</p>
-    </section>
+        <!-- Tabla de posiciones -->
+        <div class="scheme">
+            <h2>Tabla de Posiciones</h2>
+            <p>Tabla de posiciones de la liga Inglesa...</p>
+        </div>
 
-    <!-- Etapas -->
-    <section class="cup-details">
-        <h2>Etapas de la liga Inglesa</h2>
-        <figure>
-            <img alt="Etapas de la liga" src="img/etapas.jpeg">
-            <figcaption>Imagen generada por Copilot</figcaption>
-        </figure>
+        <!-- Etapas -->
+        <div class="scheme">
+            <h2>Etapas de la liga Inglesa</h2>
+            <figure>
+                <img alt="Etapas de la liga" src="img/etapas.jpeg">
+                <figcaption>Imagen generada por Copilot</figcaption>
+            </figure>
+        </div>
     </section>
-
 </main>
 </body>
 </html>

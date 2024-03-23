@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <title>Equipos</title>
-    <script>
-        function mostrarAlerta() {
-            alert("Debes estar registrado para poder guardar en favoritos");
-        }
-    </script> 
+    <script src="js/code.js"></script>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
@@ -33,7 +29,7 @@
             <label for="email">Email</label><input type="text" id="email" name="email" placeholder="Correo">
             <label for="pwd">Password</label><input type="password" id="pwd" name="pwd" placeholder="Contraseña">
             <a href="index_user.html">
-                <button type="submit">ENTRAR</button>
+                <button type="submit" class="magic-button">ENTRAR</button>
             </a>
             <a href="#">¿Contraseña Olvidada?</a>
         </section>
@@ -42,80 +38,104 @@
 <main>
     <!-- Página Principal -->
     <section id="dashboard">
-        <h2>Equipos de gran bretaña e Irlanda</h2>
+        <h2>Equipos de Gran Bretaña e Irlanda</h2>
         <!-- Listado de equipos participantes -->
-        <div class="matches-container">
-            <div class="match">
-                <h3>Appleby Arrows</h3>
-                <p>Equipo del norte de inglaterra fundado en 1612. Mayor momento de gloria
-                    en 1923. Hay una tradición rivalidad entre los Arrows y las Avispas de Wimbourne.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Avispas de Wimbourne</h3>
-                <p>Fundado en 1312. ha ganado dieciocho veces la liga y ha llegado hasta dos semifinales
-                    de la Eurcopa.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Caerphilly Catapults</h3>
-                <p>Los Catapults de Gales se formaron en 1402. Tienen dieciocho triunfos en la liga y 
-                    un célebre triunfo en la final de la copa Europea de 1956.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Chudley Cannons</h3>
-                <p>Han ganado la liga en veitiuna ocasiones, la ultima vez fue en 1892.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Falmouth Falcons</h3>
-                <p>Conocidos por jugar duro.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Holyhead Harpies</h3>
-                <p>Equipo Galés fundado en 1203. Único por sólo ha fichado brujas en toda su historia.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Kenmare Kestrels</h3>
-                <p>Equipo Irlandés fundado en 1291.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Montrose Magpies</h3>
-                <p>Es el equipo que acumula más éxitos en la historia de la liga de Irlanda y Gran Bretaña,
-                    treinta y dos ediciones. Han sido dos veces campeones de Europa.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Murciélagos de Ballycastle</h3>
-                <p>Ha ganado la Liga de quidditch un total de veintiseis veces, lo que lo convierte en el 
-                    segundo equipo más éxito en la historia de la competición.. Es el equipo más famoso de Irlanda del Norte.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Pride of Portree</h3>
-                <p>Fundado en 1292 en la Isla de Skye. Llamados como Los Prides han ganado dos veces La Liga en 1960.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Puddlemere United</h3>
-                <p>Fundado en 1163 es el equipo más antiguo de La Liga. Posee veintedós titulos de la Liga y dos de la Copa de Europa.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Tutshill Tornados</h3>
-                <p>Fundado en 1520, disfrutó de su mayor racha de éxitos a principios del siglo XX, cuando ganó el campeonato de Liga cinco veves seguidas, un record
-                    tanto en inglaterra como en Gran Bretaña.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
-            <div class="match">
-                <h3>Wigtown Wanderers</h3>
-                <p>Fundado en 1422 por los siete descendientes de un mago carnicero llamado Walter Parkin.</p>
-                <button onclick="mostrarAlerta()">Agregar a favoritos</button>
-            </div>
+        <div class="scheme">
+            <h3>Appleby Arrows</h3>
+            <p>Equipo del norte de inglaterra fundado en 1612. Mayor momento de gloria
+                en 1923. Hay una tradición rivalidad entre los Arrows y las Avispas de Wimbourne.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form>        
+        </div>
+        <div class="scheme">
+            <h3>Avispas de Wimbourne</h3>
+            <p>Fundado en 1312. ha ganado dieciocho veces la liga y ha llegado hasta dos semifinales
+                de la Eurcopa.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Caerphilly Catapults</h3>
+            <p>Los Catapults de Gales se formaron en 1402. Tienen dieciocho triunfos en la liga y 
+                un célebre triunfo en la final de la copa Europea de 1956.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Chudley Cannons</h3>
+            <p>Han ganado la liga en veitiuna ocasiones, la ultima vez fue en 1892.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Falmouth Falcons</h3>
+            <p>Conocidos por jugar duro.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Holyhead Harpies</h3>
+            <p>Equipo Galés fundado en 1203. Único por sólo ha fichado brujas en toda su historia.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Kenmare Kestrels</h3>
+            <p>Equipo Irlandés fundado en 1291.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Montrose Magpies</h3>
+            <p>Es el equipo que acumula más éxitos en la historia de la liga de Irlanda y Gran Bretaña,
+                treinta y dos ediciones. Han sido dos veces campeones de Europa.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Murciélagos de Ballycastle</h3>
+            <p>Ha ganado la Liga de quidditch un total de veintiseis veces, lo que lo convierte en el 
+                segundo equipo más éxito en la historia de la competición.. Es el equipo más famoso de Irlanda del Norte.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+         <div class="scheme">
+            <h3>Pride of Portree</h3>
+            <p>Fundado en 1292 en la Isla de Skye. Llamados como Los Prides han ganado dos veces La Liga en 1960.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Puddlemere United</h3>
+            <p>Fundado en 1163 es el equipo más antiguo de La Liga. Posee veintedós titulos de la Liga y dos de la Copa de Europa.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Tutshill Tornados</h3>
+            <p>Fundado en 1520, disfrutó de su mayor racha de éxitos a principios del siglo XX, cuando ganó el campeonato de Liga cinco veves seguidas, un record
+                tanto en inglaterra como en Gran Bretaña.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
+        </div>
+        <div class="scheme">
+            <h3>Wigtown Wanderers</h3>
+            <p>Fundado en 1422 por los siete descendientes de un mago carnicero llamado Walter Parkin.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Agregar a Favoritos</button>
+            </form> 
         </div>
     </section>
 </main>

@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <title>Recargar</title>
-    <script>
-        function upload() {
-            alert("Recarga realizada con exito");
-        }
-    </script>    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="js/code.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -41,9 +38,9 @@
 </header>
 <main>
     <!-- Formulario para recargar creditos -->
-    <section class="user-profile">
-        <div id="user-info">
-            <h2>Recargar</h2>
+    <section id="dashboard">
+        <h2>Recargar</h2>
+        <div class="scheme">
             <form action="" method="post" enctype="">
                 <label for="upg-amount">Valor:</label>
                 <input type="number" id="upg-amount" name="upg-amount" placeholder="Ingrese monto a recargar">
@@ -54,8 +51,8 @@
                     <option value="opc2">Bancolombia</option>
                     <option value="opc3">Daviplata</option>
                 </select>
-
-                <button onclick="upload()">Recargar</button>
+                
+                <button onclick="upload()" class="magic-button">Recargar</button>
             </form>
         </div>
     </section>

@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <title>Partidos</title>
-    <script>
-        function mostrarAlerta() {
-            alert("Debes estar registrado para apostar");
-        }
-    </script><link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="js/code.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
 
 <body>
 <header>
@@ -31,7 +29,7 @@
             <label for="email">Email</label><input type="text" id="email" name="email" placeholder="Correo">
             <label for="pwd">Password</label><input type="password" id="pwd" name="pwd" placeholder="Contraseña">
             <a href="index_user.html">
-                <button type="submit">ENTRAR</button>
+                <button class="magic-button" type="submit">ENTRAR</button>
             </a>
             <a href="#">¿Contraseña Olvidada?</a>
         </section>
@@ -39,46 +37,46 @@
 </header>
 <main>
     <!-- Detalles del Partido -->
-    <section class="match-details">
-        <h2>Detalles del Partido</h2>
+    <section id="dashboard">
+        <h2>Detalles de los Partidos</h2>
         <!-- Información detallada del partido, opciones de predicción y apuesta -->
-        <h3>Equipo A vs. Equipo B</h3>
-        <p>Estadísticas Previas, Cuotas de Apuestas, etc.</p>
-        <form>
-            <button onclick="mostrarAlerta()">Realizar Apuesta</button>
-        </form>
-        <a href="match_detail.html">
-            <button>Detalle</button>
-        </a>
-        
-    </section>
+        <div class="scheme">
+            <h3>Equipo A vs. Equipo B</h3>
+            <p>Estadísticas Previas, Cuotas de Apuestas, etc.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Realizar Apuesta</button>
+            </form>
+            <br>
+            <a href="match_detail.html">
+                <button class="magic-button">Detalle</button>
+            </a>
+        </div>
 
-    <!-- Detalles del Partido -->
-    <section class="match-details">
-        <h2>Detalles del Partido</h2>
         <!-- Información detallada del partido, opciones de predicción y apuesta -->
-        <h3>Equipo C vs. Equipo D</h3>
-        <p>Estadísticas Previas, Cuotas de Apuestas, etc.</p>
-        <form>
-            <button onclick="mostrarAlerta()">Realizar Apuesta</button>
-        </form>
-        <a href="match_detail.html">
-            <button>Detalle</button>
-        </a>
-    </section>
+        <div class="scheme">
+            <h3>Equipo C vs. Equipo D</h3>
+            <p>Estadísticas Previas, Cuotas de Apuestas, etc.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Realizar Apuesta</button>
+            </form>
+            <br>
+            <a href="match_detail.html">
+                <button class="magic-button">Detalle</button>
+            </a>
+        </div>
 
-    <!-- Detalles del Partido -->
-    <section class="match-details">
-        <h2>Detalles del Partido</h2>
         <!-- Información detallada del partido, opciones de predicción y apuesta -->
-        <h3>Equipo R vs. Equipo E</h3>
-        <p>Estadísticas Previas, Cuotas de Apuestas, etc.</p>
-        <form>
-            <button onclick="mostrarAlerta()">Realizar Apuesta</button>
-        </form>
-        <a href="match_detail.html">
-            <button>Detalle</button>
-        </a>
+        <div class="scheme">
+            <h3>Equipo R vs. Equipo E</h3>
+            <p>Estadísticas Previas, Cuotas de Apuestas, etc.</p>
+            <form>
+                <button class="magic-button" onclick="mostrarAlerta()">Realizar Apuesta</button>
+            </form>
+            <br>
+            <a href="match_detail.html">
+                <button class="magic-button">Detalle</button>
+            </a>
+        </div>
     </section>
 </main>
 </body>
