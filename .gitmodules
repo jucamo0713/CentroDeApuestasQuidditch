@@ -1,0 +1,10 @@
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:jucamo0713/CentroDeApuestasQuidditchFrontend.git
+	branch = .
+    update = rebase
+[submodule "backend"]
+	path = backend
+	url = git@github.com:jucamo0713/CentroDeApuestasQuidditchBackend.git
+	branch = .
+    update = rebase
